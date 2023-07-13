@@ -1,3 +1,4 @@
+import { InputForm } from "../input";
 import { ContainerHeader, ContainerText, Title } from "./styles";
 
 export const Header = () => {
@@ -6,6 +7,7 @@ export const Header = () => {
       <ContainerText>
         <Title>Wizzi!</Title>
       </ContainerText>
+      <InputForm />
     </ContainerHeader>
   );
 };
