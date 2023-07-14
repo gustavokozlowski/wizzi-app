@@ -1,4 +1,5 @@
 import './App.css'
+import { Box } from './components/box'
 import { Header } from './components/header'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
     <>
         <Header />
-        <h1>hellow teste</h1>
+        <Box />
     </>
   )
 }

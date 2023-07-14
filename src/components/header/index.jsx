@@ -1,13 +1,11 @@
-import { InputForm } from "../input";
-import { ContainerHeader, ContainerText, Title } from "./styles";
+import { HeaderContainer, HeaderContent, Title } from "./styles";
 
 export const Header = () => {
   return (
-    <ContainerHeader>
-      <ContainerText>
+    <HeaderContainer>
+      <HeaderContent>
         <Title>Wizzi!</Title>
-      </ContainerText>
-      <InputForm />
-    </ContainerHeader>
+      </HeaderContent>
+    </HeaderContainer>
   );
 };
