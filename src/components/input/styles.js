@@ -6,11 +6,6 @@ import {
   BsCalendar2CheckFill,
 } from "react-icons/bs";
 import { HiTicket } from "react-icons/hi";
-import FloatingLabel from "react-styled-floating-label";
-
-export const BlueFloatingLabel = styled(FloatingLabel)`
-  color: rgb(255, 7, 120);
-`;
 
 export const Form = styled.form`
   /* background-color:rgb(25, 117, 12); */
@@ -27,7 +22,7 @@ export const Subtitle = styled.h2`
   color: rgb(255, 7, 120);
   margin: 0;
   font-size: 1.4rem;
-  text-shadow: #ddd 1px 1px 1px;
+  text-shadow: #ddd 0.2px 0.2px 0.2px;
 `;
 export const Container = styled.div`
   display: flex;
@@ -43,9 +38,7 @@ export const IconBsFillPersonFill = styled(BsFillPersonFill)`
   font-size: 1.2rem;
   color: rgb(255, 7, 120);
 `;
-export const IconBsFillTicketPerforatedFill = styled(
-  BsFillTicketPerforatedFill
-)`
+export const IconBsFillTicketPerforatedFill = styled( BsFillTicketPerforatedFill)`
   font-size: 1.2rem;
   color: rgb(255, 7, 120);
 `;
@@ -84,9 +77,9 @@ export const Input = styled.input`
   height: 4vh;
   width: 15vw;
   padding-top: 0.5em;
-  text-shadow: #ddd 1px 1px 1px;
+  text-shadow: #ddd 0.2px 0.2px 0.2px;
   &::placeholder {
-    text-shadow: #ddd 1px 1px 1px;
+    text-shadow: #ddd 0.2px 0.2px 0.2px;
   }
   &:focus {
     border-color: rgb(255, 7, 120);
@@ -94,7 +87,7 @@ export const Input = styled.input`
   }
 `;
 export const Label = styled.label`
-  text-shadow: #ddd 1px 1px 1px;
+  text-shadow: #ddd 0.2px 0.2px 0.2px;
   font-size: 1rem;
   color: rgb(255, 7, 120);
   font-weight: bold;
@@ -103,7 +96,7 @@ export const ErrorMessage = styled.span`
   font-size: 0.7rem;
   font-weight: bold;
   color: #f33;
-  text-shadow: #ddd 0.2rem 0.2rem 0.2rem;
+  text-shadow: #ddd 0.2px 0.2px 0.2px;
   /* align-self: flex-start; */
 `
 export const ButtonContainer = styled.div`
@@ -114,17 +107,16 @@ export const ButtonContainer = styled.div`
 
 export const Button = styled.button`
   cursor: pointer;
-  text-shadow: #000 0.6px 0.8px 0.9px;
+  text-shadow: #000 0.2px 0.2px 0.2px;
   color: #fff;
-  padding: 1rem;
-  border-radius: 7px;
+  padding: 0.5rem;
+  border-radius: 5px;
   font-size: 1.2rem;
   background-color: rgb(255, 7, 120);
   height: fit-content;
   width: 25%;
   /* border: 1px solid #ddd; */
   border: none;
-  font-weight: bolder;
   margin: 2rem 0 0 0;
   box-shadow: 1px 1px 1px rgb(100, 100, 100), 1px 1px 1px rgb(100, 100, 100);
 `;

@@ -1,9 +1,5 @@
-import { Box } from "../../components/box"
+import { Box } from "../../components/box";
 
 export const Home = () => {
-  return (
-    <>
-     <Box />
-    </>
-  )
-}
+  return <Box />
+};

@@ -11,7 +11,7 @@ export const BoxContainer = styled.div`
   
 `;
 export const BoxContent = styled.main`
-  z-index: 1000;
+
   background-color:rgb(255, 255, 255);
   height: 100vh;
   width: 40vw;
@@ -26,7 +26,7 @@ export const BoxContent = styled.main`
 export const Title = styled.h1`
   color:  #fff ;
   font-size: 1.8rem;
-  text-shadow: #000 1px 1px 1px;
+  text-shadow: #000 0.3px 0.3px 0.3px;
   font-weight: bolder;
   
 `;
@@ -40,6 +40,6 @@ export const HeaderBox = styled.header`
   text-align: center;
   border-radius: 6px 6px 0 0;
   justify-content: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.5px solid #ddd;
 
 `;

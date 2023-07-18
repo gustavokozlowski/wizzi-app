@@ -18,6 +18,8 @@ import {
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { Modal } from "../modal";
+import { useState } from "react";
 
 const schemaForm = yup.object().shape({
   nome: yup.string().required("Por favor, preencha este campo"),
@@ -40,6 +42,8 @@ const schemaForm = yup.object().shape({
 });
 
 export const InputForm = () => {
+  const [isOpen, setIsOpen] = useState(!false);
+  const [opacity, setOpacity] = useState(0);
   const {
     register,
     handleSubmit: onSubmit,
@@ -49,12 +53,26 @@ export const InputForm = () => {
     resolver: yupResolver(schemaForm),
   });
 
+  function toggleModal() {
+    setOpacity(0);
+    setIsOpen(!isOpen);
+  }
+
+  function afterOpen() {
+    setTimeout(() => {
+      setOpacity(1);
+    }, 100);
+  }
+
+  function beforeClose() {
+    return new Promise((resolve) => {
+      setOpacity(0);
+      setTimeout(resolve, 300);
+    });
+  }
+
   const handleResult = (data) => {
-    // const height = watch("height") / 100;
-    // const weight = watch("weight");
-    // const result = weight / (height * height);
-    // setImc(result.toFixed(2));
-    // setIsOpen(!isOpen);
+    toggleModal()
     return console.log(data);
   };
 
@@ -172,9 +190,18 @@ export const InputForm = () => {
           </ContainerInput>
         </Section>
         <ButtonContainer>
-          <Button form="form" type="submit">Reservar</Button>
+          <Button form="form" type="submit">
+            Reservar
+          </Button>
         </ButtonContainer>
       </Form>
+      <Modal
+        afterOpen={afterOpen}
+        beforeClose={beforeClose}
+        isOpen={isOpen}
+        opacity={opacity}
+        toggleModal={toggleModal}
+      />
     </Container>
   );
 };
