@@ -1,6 +1,7 @@
 import Modal, { BaseModalBackground} from "styled-react-modal";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const StyledModal = styled(Modal)`
   opacity: ${(props) => props.opacity};
@@ -26,6 +27,9 @@ export const IconBsFillCheckCircleFill = styled(BsFillCheckCircleFill)`
   margin: 1rem;
   font-size: 4rem;
   color: #2a8e29;
+`;
+export const IconMotion = styled(motion.div)`
+
 `;
 
 export const Title = styled.h1`
