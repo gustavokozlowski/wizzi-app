@@ -6,7 +6,6 @@ export const HeaderContainer = styled.header`
   height: 8vh;
   display: flex;
   align-items: center;
-  margin: 0 0 5rem 0
   
 `;
 export const HeaderContent = styled.main`

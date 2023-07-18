@@ -1,9 +1,15 @@
 
-body {
+* {
   margin: 0;
-  font-family:'Segoe UI', 'Roboto', 'Oxygen';
+  font-family:'Segoe UI', 'Roboto';
   box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
+  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 
