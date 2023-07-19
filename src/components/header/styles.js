@@ -4,11 +4,9 @@ import { devices } from "../../utils/device";
 
 export const HeaderContainer = styled.header`
   background-color:rgb(255, 7, 120);
-  height: 8vh;
+  height: 7vh;
   display: flex;
   align-items: center;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0);
-  
 `;
 export const HeaderContent = styled.main`
   display: flex;
@@ -24,7 +22,20 @@ export const Title = styled.h1`
   font-size: 1.8rem;
   text-shadow: #000 0.1em 0.1em 0.1em;
   font-weight: bolder;
-  @media only screen and ${devices.xs} {
+  @media ${devices.xs} {
+    font-size: 1rem;
+    
+  }
+  @media ${devices.sm} {
     font-size: 1.2rem;
+  }
+  @media ${devices.md} {
+    font-size: 1.3rem;
+  }
+  @media ${devices.lg} {
+    font-size: 1.4rem;
+  }
+  @media ${devices.xl} {
+    font-size: 1.5rem;
   }
 `;

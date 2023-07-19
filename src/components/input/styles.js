@@ -13,9 +13,10 @@ export const Form = styled.form`
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   grid-template-columns: auto;
+  padding: 0 0 0 0.5rem;
 `;
 
 export const Subtitle = styled.h2`
@@ -26,6 +27,7 @@ export const Subtitle = styled.h2`
   text-shadow: #ddd 0.2px 0.2px 0.2px;
   @media ${devices.xs} {
     font-size: 0.7rem;
+    margin: 0.2rem;
   }
   @media ${devices.sm} {
     font-size: 0.7rem;
@@ -129,21 +131,25 @@ export const TextContent = styled.div`
   width: 100%;
   display: flex;
   margin: 0;
+  margin: 0.2rem;
 `;
 export const Section = styled.section`
   /* background-color: aquamarine; */
   height: 100%;
   width: 100%;
+  min-width: 90vw;
   display: grid;
-  align-items: center;
+  
   grid-template-columns: auto auto;
   @media ${devices.xs} {
     padding: 0;
-    min-width: 85vw;
+    min-width: 80vw;
+    align-items: center;
   }
   @media ${devices.sm} {
     padding: 0;
     min-width: 75vw;
+
   }
   @media ${devices.md} {
     padding: 0;
@@ -155,7 +161,7 @@ export const Section = styled.section`
   }
   @media ${devices.xl} {
     padding: 0;
-    min-width: 35vw;
+    min-width: 50vw;
     
   }
 
@@ -166,7 +172,8 @@ export const ContainerInput = styled.div`
 
   @media ${devices.xs} {
       width: 100%;
-      margin: 0 0.2rem 0 0.2rem;
+      justify-content: space-between;
+    
       
   }
   @media ${devices.sm} {
@@ -216,6 +223,7 @@ export const Label = styled.label`
 export const ErrorMessage = styled.span`
   font-size: 0.7rem;
   font-weight: bold;
+  margin:0.1rem;
   color: #f33;
   text-shadow: #ddd 0.1px 0.1px 0.1px;
   @media ${devices.xs} {

@@ -17,7 +17,7 @@ export const Modal = ({ toggleModal, afterOpen, beforeClose, isOpen, opacity }) 
          <IconMotion
          initial={{ y: -70 }}
          animate={{ y: 0 }}
-         transition={{ type: "spring", stiffness: 50 }}
+         transition={{ type: "spring", stiffness: 60 }}
          >
           < IconBsFillCheckCircleFill />
          </IconMotion>

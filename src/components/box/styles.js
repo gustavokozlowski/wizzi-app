@@ -9,8 +9,6 @@ export const BoxContainer = styled.div`
   align-items: center;
   flex-direction: column;
   /* border: 1px solid #000; */
-  @media ${devices.xs} {
-  }
 `;
 
 // tem que ser sempre maior que o form
@@ -27,30 +25,32 @@ export const BoxContent = styled.main`
   flex-direction: column;
   border: 1px solid #ddd;
   @media ${devices.xs} {
-  height: 40vh;
+  height: 60vh;
+  align-items: center;
+
   width: 90vw;
-  margin: 2rem;
+ 
   }
   @media ${devices.sm} {
   height: 45vh;
   width: 80vw;
-  margin: 1.2rem;
+  margin: 3rem;
   }
   @media ${devices.md} {
   height: 45vh;
   width: 60vw;
-  margin: 1.2rem;
+  margin: 4rem;
   }
   @media ${devices.lg} {
   height: 50vh;
   width: 60vw;
-  margin: 1.4rem;
+  margin: 4rem;
 
   }
   @media ${devices.xl} {
     height: 60vh;
-  width: 40vw;
-  margin: 2rem;
+  width: 55vw;
+  margin: 5rem;
   }
 
 `;
@@ -58,11 +58,11 @@ export const BoxContent = styled.main`
 export const Title = styled.h1`
   color: #fff;
   font-size: 1.8rem;
-  text-shadow: #000 0.5px 0.5px 0.5px;
+  text-shadow: #000 1px 1px 1px;
  
   @media ${devices.xs} {
     font-size: 0.8rem;
-    text-shadow: #000 1px 1px 1px;
+    
   }
   @media ${devices.sm} {
     font-size: 0.9rem;
@@ -81,7 +81,7 @@ export const Title = styled.h1`
 
 export const HeaderBox = styled.header`
   background-color: rgb(255, 7, 120);
-  height: 10vh;
+  height: 7vh;
   padding: 0.5rem;
   width: 100%;
   display: flex;
@@ -89,8 +89,4 @@ export const HeaderBox = styled.header`
   text-align: center;
   border-radius: 6px 6px 0 0;
   justify-content: center;
-  border-bottom: 0.5px solid #000;
-  @media ${devices.xs} {
-    height: 5vh;
-  }
 `;
