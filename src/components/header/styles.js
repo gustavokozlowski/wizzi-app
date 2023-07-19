@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../utils/device";
 
 
 export const HeaderContainer = styled.header`
@@ -23,4 +24,7 @@ export const Title = styled.h1`
   font-size: 1.8rem;
   text-shadow: #000 0.1em 0.1em 0.1em;
   font-weight: bolder;
+  @media only screen and ${devices.xs} {
+    font-size: 1.2rem;
+  }
 `;

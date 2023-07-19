@@ -42,7 +42,7 @@ const schemaForm = yup.object().shape({
 });
 
 export const InputForm = () => {
-  const [isOpen, setIsOpen] = useState(!false);
+  const [isOpen, setIsOpen] = useState(false);
   const [opacity, setOpacity] = useState(0);
   const {
     register,
@@ -98,7 +98,7 @@ export const InputForm = () => {
           <ContainerInput>
             <Label htmlFor="email">E-mail</Label>
             <Input
-              name="destino"
+              name="email"
               placeholder="e-mail"
               type="email"
               id="email"
@@ -113,7 +113,7 @@ export const InputForm = () => {
         </TextContent>
         <Section>
           <ContainerInput>
-            <Label htmlFor="origem">Local de embarque</Label>
+            <Label htmlFor="origem">Embarque</Label>
             <Input
               name="origem"
               placeholder="saindo de"
@@ -124,7 +124,7 @@ export const InputForm = () => {
             <ErrorMessage>{errors.origem?.message}</ErrorMessage>
           </ContainerInput>
           <ContainerInput>
-            <Label htmlFor="destino">Para onde você deseja ir?</Label>
+            <Label htmlFor="destino">Destino</Label>
             <Input
               name="destino"
               placeholder="indo para"
@@ -169,7 +169,7 @@ export const InputForm = () => {
         </TextContent>
         <Section>
           <ContainerInput>
-            <Label htmlFor="data-ida">Quando deseja ir?</Label>
+            <Label htmlFor="data-ida">Ida</Label>
             <Input
               name="data-ida"
               type="date"
@@ -179,7 +179,7 @@ export const InputForm = () => {
             <ErrorMessage>{errors.data_ida?.message}</ErrorMessage>
           </ContainerInput>
           <ContainerInput>
-            <Label htmlFor="data-retorno">Quando deseja voltar?</Label>
+            <Label htmlFor="data-retorno">Retorno</Label>
             <Input
               name="data-retorno"
               type="date"

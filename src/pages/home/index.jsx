@@ -1,5 +1,10 @@
 import { Box } from "../../components/box";
+import { HomeContainer } from "./styles";
 
 export const Home = () => {
-  return <Box />
+  return(
+    <HomeContainer>
+    <Box />
+    </HomeContainer>
+    )
 };

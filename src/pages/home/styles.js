@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
+export const HomeContainer = styled.main`
   display: flex;
-  margin: 1rem;
+  height: 100vh;
+  width: 100vw;
 `;
 
